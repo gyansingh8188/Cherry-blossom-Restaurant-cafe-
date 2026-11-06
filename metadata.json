@@ -1,0 +1,6 @@
+{
+  "name": "Cherry Blossom Restaurant & Cafe",
+  "description": "Premium dining & cafe website for Cherry Blossom Restaurant & Cafe in Robertsganj, Sonbhadra. Featuring interactive menu, table reservations, ambience gallery, and direct ordering.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

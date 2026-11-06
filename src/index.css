@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-burgundy: #651F35;
+    --color-pink-soft: #F3C7D2;
+    --color-ivory: #FFF9F4;
+    --color-gold: #C49A62;
+    --color-charcoal: #292326;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #292326;
+    background-color: #FFF9F4;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif-luxury {
+    font-family: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+  }
+
+  .font-cormorant {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+  }
+}
+
+/* Custom delicate petal float animation */
+@keyframes petal-float {
+  0% {
+    transform: translate(0, -10px) rotate(0deg);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translate(60px, 120px) rotate(180deg);
+    opacity: 0;
+  }
+}
+
+.animate-petal {
+  animation: petal-float 12s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+}
+
+/* Custom scrollbar for menu & trays */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FFF9F4;
+}
+::-webkit-scrollbar-thumb {
+  background: #E5B6C2;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #651F35;
+}
+
